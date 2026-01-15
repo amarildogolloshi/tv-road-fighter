@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Road Runner TV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game" aria-label="Road Runner TV" role="application"></canvas>
+
+    <!-- HUD -->
+    <div id="hud">
+      <div class="hud-left">
+        <span id="fuel">Fuel: 100%</span>
+        <span id="speed">Speed: 0 km/h</span>
+      </div>
+      <div class="hud-right">
+        <span id="distance">Distance: 0 m</span>
+        <span id="lives">Lives: 3</span>
+      </div>
+    </div>
+
+    <!-- Overlay screens -->
+    <div id="overlay" class="overlay show">
+      <div class="panel" id="menu">
+        <h1>Road Runner TV</h1>
+        <p>Use your TV remote:</p>
+        <ul>
+          <li>◀ ▶ to steer</li>
+          <li>▲ ▼ to adjust speed</li>
+          <li><strong>OK/Enter</strong> to Boost</li>
+          <li><strong>Back/Esc</strong> to Pause</li>
+        </ul>
+        <p class="hint">Press <strong>OK/Enter</strong> to start</p>
+      </div>
+
+      <div class="panel hidden" id="pause">
+        <h2>Paused</h2>
+        <p>Press <strong>OK/Enter</strong> to resume</p>
+      </div>
+
+      <div class="panel hidden" id="gameover">
+        <h2>Game Over</h2>
+        <p id="final-stats"></p>
+        <p class="hint">Press <strong>OK/Enter</strong> to restart</p>
+      </div>
+    </div>
+  </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
