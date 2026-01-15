@@ -1,28 +1,12 @@
+
 {
   "name": "tv-road-fighter",
   "version": "1.0.0",
-  "type": "module",
-  "description": "",
-  "main": "server.js",
+  "private": true,
+  "description": "TV Road Fighter - static site",
+  "homepage": "https://amarildogolloshi.github.io/tv-road-fighter/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amarildogolloshi/tv-road-fighter.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/amarildogolloshi/tv-road-fighter/issues"
-  },
-  "homepage": "https://github.com/amarildogolloshi/tv-road-fighter#readme",
-  "dependencies": {
-    "express": "^5.2.1"
+    "deploy": "gh-pages -d public"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
